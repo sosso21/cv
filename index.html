@@ -393,6 +393,36 @@ html{
 display: inline;
     }
     
+    
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html {
+    font-size: 13px;
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+  
+  .flex-cont {
+      padding: 1rem 1rem;
+      min-height: 10vh;
+      
+    }
+    
+    .titlePAge {
+      font-size: 4rem;
+      margin: 1rem;
+    }
+}
   </style>
 </body>
 
